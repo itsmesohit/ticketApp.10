@@ -1,0 +1,31 @@
+{
+  "name": "@coding-spark/common",
+  "version": "1.0.10",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "description": "",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m 'Publish new update' && npm version patch && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/cookie-session": "^2.0.49",
+    "@types/jsonwebtoken": "^9.0.6",
+    "cookie-session": "^2.1.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-nats-streaming": "^0.3.2"
+  }
+}
