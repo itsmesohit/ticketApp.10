@@ -1,0 +1,26 @@
+/* Custom global CSS */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
