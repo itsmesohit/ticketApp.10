@@ -32,45 +32,51 @@ The project is divided into multiple services, each responsible for a specific p
 
 ### Installation
 
-1. Clone the repository:
+*Clone the repository:
 
+*git clone https://github.com/itsmesohit/ticketApp.git
 
-git clone https://github.com/itsmesohit/ticketApp.git
-cd ticketApp
-Install dependencies for each service (if using separate services):
+*cd ticketApp
 
-cd client
-npm install
-cd ../orders
-npm install
-cd ../tickets
-npm install
+*Install dependencies for each service (if using separate services):
 
-To run the app locally, use Docker (optional but recommended):
+*cd client
+*npm install
+*cd ../orders
+*npm install
+*cd ../tickets
+*npm install
 
-docker-compose up
+*To run the app locally, use Docker (optional but recommended):
 
-If you are not using Docker, you can run the services separately with:
+*docker-compose up
 
-npm start
-Running Tests
-To run the tests, navigate to the relevant service directory and run the test commands:
-cd client
-npm run test
-Repeat the process for other services (orders, tickets, etc.).
-Deployment
-For production deployments, you can use Kubernetes, as specified in the infra/k8s folder. You can set up the app using Helm charts or custom Kubernetes manifests.
-cd infra/k8s
-kubectl apply -f .
+*If you are not using Docker, you can run the services separately with:
+
+*npm start
+
+*cd client
+*npm start
+
+*cd orders
+*npm start
+
+*tickets
+*npm start
+
+##  Deployment
+*For production deployments, you can use Kubernetes, as specified in the infra/k8s folder. You can set up the app using Helm charts or custom Kubernetes manifests.
+*cd infra/k8s
+*kubectl apply -f .
 
 ## Tech Stack
 
-Backend: Node.js, Express, and TypeScript
-Frontend: React.js and TypeScript
-Database: PostgreSQL (or any other database of your choice)
-Infrastructure: Docker, Kubernetes, Helm
-Other: GitHub Actions for CI/CD, Jest for testing
+*Backend: Node.js, Express, and TypeScript
+*Frontend: React.js and TypeScript
+*Database: PostgreSQL (or any other database of your choice)
+*Infrastructure: Docker, Kubernetes, Helm
+*Other: GitHub Actions for CI/CD, Jest for testing
 
 
 ## License
-This project is licensed under the MIT License.
+*This project is licensed under the MIT License.
